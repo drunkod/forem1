@@ -1,5 +1,6 @@
 FROM quay.io/forem/forem:latest
 
+# Веб-служба Rails, которая запускает основное приложение.
 # We create the localimages/uploads symlink to enable serving images from 
 # the Rails server in production. 
 # See https://github.com/forem/forem/issues/13307 for more details.
@@ -8,4 +9,4 @@ FROM quay.io/forem/forem:latest
 
 ADD ./scripts scripts/
 
-ENTRYPOINT ["./scripts/rails.sh"]
+ENTRYPOINT ["bash", "./scripts/rails.sh"]
