@@ -4,7 +4,8 @@ set -e
 source scripts/services.env
 
 # echo "Running db:setup"
-SEEDS_MULTIPLIER=1 bin/rails db:seed
+#SEEDS_MULTIPLIER=1 bin/rails db:seed
+#bin/rails  db:migrate
 
 echo "Running app_initializer:setup"
 until bin/rails app_initializer:setup
