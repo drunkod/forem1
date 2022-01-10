@@ -9,4 +9,4 @@ FROM quay.io/forem/forem:latest
 
 ADD ./scripts scripts/
 
-ENTRYPOINT ["./scripts/sidekiq.sh"]
+ENTRYPOINT ["bash", "./scripts/sidekiq.sh"]
