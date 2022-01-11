@@ -18,4 +18,4 @@ echo "Running forem:setup"
 bin/rails forem:setup
 
 echo "Starting the application server"
-bin/rails s
+bin/rails s 

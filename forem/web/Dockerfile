@@ -8,5 +8,6 @@ FROM quay.io/forem/forem:latest
 # RUN ln -s /opt/apps/forem/public/uploads/ /opt/apps/forem/public/localimages/uploads
 
 ADD ./scripts scripts/
+ADD ./scripts opt/apps/forem/
 
 ENTRYPOINT ["bash", "./scripts/rails.sh"]
