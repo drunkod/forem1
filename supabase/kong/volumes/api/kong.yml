@@ -130,8 +130,8 @@ services:
 
   ## Secure Database routes
   - name: meta
-    _comment: "pg-meta: /pg/* -> http://10.6.5.107:8080/*"
-    url: http://10.6.5.107:8080/
+    _comment: "pg-meta: /pg/* -> http://10.6.4.248:8080/*"
+    url: http://10.6.4.248:8080/
     routes:
       - name: meta-all
         strip_path: true
