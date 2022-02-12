@@ -10,4 +10,6 @@ FROM quay.io/forem/forem:latest
 ADD ./scripts scripts/
 ADD ./scripts opt/apps/forem/
 
-ENTRYPOINT ["bash", "./scripts/rails.sh"]
+ENTRYPOINT ["./scripts/entrypoint.sh"]
+
+CMD ["bash", "-c", "./scripts/rails.sh]
