@@ -12,4 +12,4 @@ ADD ./scripts opt/apps/forem/
 
 ENTRYPOINT ["./scripts/entrypoint.sh"]
 
-CMD ["bash", "-c", "./scripts/rails.sh]
+CMD ["bash", "-c", "./scripts/rails.sh"]
