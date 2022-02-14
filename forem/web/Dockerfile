@@ -6,6 +6,7 @@ FROM quay.io/forem/forem:latest
 # See https://github.com/forem/forem/issues/13307 for more details.
 # RUN mkdir /opt/apps/forem/public/localimages
 # RUN ln -s /opt/apps/forem/public/uploads/ /opt/apps/forem/public/localimages/uploads
+USER "${APP_USER}"
 
 ADD ./scripts scripts/
 ADD ./scripts opt/apps/forem/
